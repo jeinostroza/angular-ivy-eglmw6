@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./eventos.component.css']
 })
 export class EventosComponent implements OnInit {
-  constructor() {}
+  mensaje: string;
+
+  constructor() {
+    this.mensaje = 'Este es el mensaje inicial';
+  }
 
   ngOnInit() {}
 
@@ -16,6 +20,21 @@ export class EventosComponent implements OnInit {
   }
 
   onChange($event) {
+    console.log($event.target.value);
+  }
+  onMouseEnter() {
+    this.mensaje = 'Estoy dentro del div';
+  }
+
+  onMouseOut() {
+    this.mensaje = 'Estoy fuera del div';
+  }
+
+  onChangeInput($event) {
+    //console.log($event.target.value);
+  }
+
+  onInput($event) {
     console.log($event.target.value);
   }
 }
