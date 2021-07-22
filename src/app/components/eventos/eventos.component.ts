@@ -36,5 +36,13 @@ export class EventosComponent implements OnInit {
 
   onInput($event) {
     console.log($event.target.value);
+    this.mensaje = $event.target.value;
+  }
+  onFocus() {
+    console.log('Recibe el foco');
+  }
+
+  onBlur() {
+    console.log('Pierd el foco');
   }
 }

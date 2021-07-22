@@ -1,0 +1,42 @@
+.calculadora {
+  width: 200px;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+
+p.resultado {
+  background-color: white;
+  color: black;
+  height: 20px;
+  text-align: center;
+  line-height: 100%;
+  padding-top: 5px;
+}
+.botonesnumeros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.botonesnumeros button {
+  width: 33.33%;
+  height: 30px;
+}
+
+.botonesnumeros button:last-child {
+  width: 100%;
+}
+.botonescalculos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botonescalculos button {
+  width: 25%;
+  height: 30px;
+}
+
+.botonescalculos button:last-child {
+  width: 100%;
+}
